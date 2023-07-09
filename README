@@ -8,9 +8,4 @@ Saves tree state to a SQLite database for continuity between runs.
 
 Uses multiprocessing to evaluate more states at once.
 
-The heuristic is only informative through the early middle game, so here is an example of play until then:
-
-
-
-
 Long term goals include replacing hand coded heuristic with neural network. The two technologies pair well together since the MCTS generates an enormous database of state/value pairs that the neural network can use to improve itself.
