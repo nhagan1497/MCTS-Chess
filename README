@@ -9,3 +9,4 @@ Saves tree state to a SQLite database for continuity between runs.
 Uses multiprocessing to evaluate more states at once.
 
 Long term goals include replacing hand coded heuristic with neural network. The two technologies pair well together since the MCTS generates an enormous database of state/value pairs that the neural network can use to improve itself.
+Lots of opportunities for optimization. The database read/writes should be cached to utilize some amount of RAM which is currently not being used. The writes are bottlenecking the program and could happen asychronously.
